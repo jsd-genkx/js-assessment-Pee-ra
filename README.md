@@ -145,10 +145,6 @@
 
 จะเกิดกาสร้งแผนที่ขึ้นมา และอยู่ที่จุด (0,0) 
 
-1. // step 1
-2. // step 2
-3. // ...
-4. // step n
 
 _Notes:_<br>
 _- You can attach flowcharts, diagrams, and images as needed._<br>

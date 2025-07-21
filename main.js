@@ -12,8 +12,8 @@ const fieldCharacter = "░";
 const pathCharacter = "*";
 
 class Field {
-	constructor(field = [[]]) {
-		this.field = field;
+	constructor(fieldArray = [[]]) {
+		this.field = fieldArray;
 
 		// Replace with your own code //
 		// Set the home position at (0, 0) before the game starts
@@ -22,22 +22,24 @@ class Field {
 		this.field[this.positionRow][this.positionCol] = pathCharacter;
 	}
 
-	// Print field //
-	print() {
-		clear();
+	//Print field //
+ 	print() {
+        clear(); 
 
-		// Replace with your own code //
-		console.log(this.field); // Please REMOVE this line before you start your code!
+        this.field.forEach(row => {
+            console.log(row.join(''));
+        });
+
 	}
 
 	// Your Code //
-}
 
+}
 // Game Mode ON
-// Remark: Code example below should be deleted and use your own code.
 const newGame = new Field([
-	["░", "░", "O"],
-	["░", "O", "░"],
-	["░", "^", "░"],
+    ["░", "░", "O"],
+    ["░", "O", "░"],
+    ["░", "^", "░"],
 ]);
 newGame.print();
+
